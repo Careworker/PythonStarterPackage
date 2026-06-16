@@ -41,6 +41,13 @@ dependencies = [
     "requests>=2.27.1",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pip-tools>=7",
+    "tox>=4",
+]
+
+
 [project.license]
 text = "MIT"
 
@@ -74,4 +81,14 @@ pythonstarterpackage = [
 [tool.setuptools.data-files]
 "pythonstarterpackage/config" = [
     "config/config.json",
+]
+
+# Extra tools.
+## TOX
+[tool.tox]
+env_list = ["py311", "py312", "py313"]
+
+[tool.tox.env_run_base]
+commands = [
+    ["python", "-m", "unittest", "discover", "-s", "tests", "-p", "*.py"]
 ]

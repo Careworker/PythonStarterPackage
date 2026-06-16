@@ -99,17 +99,15 @@ class ConfigLoader:
 	def parse(self) -> dict:
 		try:
 			content = ''.join(FileModder.read_file(self.configfile))
-		except:
+		except Exception as e:
 			return {'status': 400,
-						'message': 'Error: config file could not be read.', 'data': None}
-
+					'message': f'Error: config file could not be read: {e}', 'data': None}
 		try:
 			result = json.loads(content)
 			return {'status': 200, 'message': 'Read config file complete.',
 					'data': result}
-		except:
-			return {'status': 400,
-				'message': 'Error: Failed to read config, invalid Json format.',
+		except Exception as e:
+			return {'status': 400, 'message': f'Error: Failed to read config, invalid Json format: {e}',
 				'data': None}
 
 	def update(self, data):
@@ -121,6 +119,5 @@ class ConfigLoader:
 				json.dump(data, f, ensure_ascii=False, indent=4)
 			return {'status': 200,
 						'message': 'Update config file complete.'}
-		except:
-			return {'status': 400,
-						'message': 'Error: config file could not be written to.'}
+		except Exception as e:
+			return {'status': 400, 'message': f'Error: config file could not be written to: {e}'}

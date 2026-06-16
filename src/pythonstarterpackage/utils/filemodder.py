@@ -21,7 +21,7 @@
 
 class FileModder:
 
-	@classmethod
+	@staticmethod
 	def read_file(filepath: str) -> list:
 		lines = []
 		with open(filepath,'r') as f:
