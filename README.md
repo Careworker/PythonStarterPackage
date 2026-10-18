@@ -370,8 +370,8 @@ repos useful and would like to support this project financially, feel free to
 donate to our bitcoin address.
 
 - Bitcoin Address 1: `1GZQY6hMwszqxCmbC6uGxkyD5HKPhK1Pmf`
-- [Github repo](https://github.com/ArcticTechnology/PythonStarterPackage)
+- [Github repo](https://github.com/Careworker/PythonStarterPackage)
 - [PyPI](https://pypi.org/project/PythonStarterPackage/)
 - [Official Python Packaging User Guide](https://packaging.python.org/en/latest/guides/tool-recommendations/)
 
-![alt text](https://github.com/ArcticTechnology/BitcoinAddresses/blob/main/btcaddr1.png?raw=true)
+![alt text](https://github.com/Careworker/BitcoinAddresses/blob/main/btcaddr1.png?raw=true)
