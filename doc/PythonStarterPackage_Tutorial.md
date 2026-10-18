@@ -2,7 +2,7 @@
 
 The purpose of this tutorial is to show you how to create a standard Python
 package from scratch. Feel free to reference
-[PythonStarterPackage](https://github.com/ArcticTechnology/PythonStarterPackage)
+[PythonStarterPackage](https://github.com/Careworker/PythonStarterPackage)
 when going through this tutorial. It is what the end result will look like.
 
 ## Background
